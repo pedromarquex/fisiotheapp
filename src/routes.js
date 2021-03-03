@@ -11,8 +11,16 @@ function Routes() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Main" component={Main} />
-        <Stack.Screen name="Exercise" component={Exercise} />
+        <Stack.Screen
+          options={{ headerShown: false }}
+          name="Main"
+          component={Main}
+        />
+        <Stack.Screen
+          options={{ title: '' }}
+          name="Exercise"
+          component={Exercise}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
